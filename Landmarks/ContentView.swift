@@ -15,7 +15,7 @@ struct ContentView: View {
                 Text("Ohio")
                     .font(.subheadline)
             }
-        }
+        }.padding(10)
     }
 }
 
