@@ -4,6 +4,7 @@ import SwiftUI
 import CoreLocation
 
 struct Landmark: Hashable, Codable, Identifiable {
+
     var name: String
     var category: String
     var city: String
@@ -11,7 +12,7 @@ struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var park: String
     var description: String
-    
+    var isFavorite: Bool
     
     private var imageName: String
     var image: Image {

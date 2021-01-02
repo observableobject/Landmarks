@@ -1,13 +1,12 @@
-//
-//  ModelData.swift
-//  Landmarks
-//
-//  Created by Vincent Frascello on 12/31/20.
-//
 
 import Foundation
+import Combine
 
-var landmarks: [Landmark] = load("landmarkData.json")
+
+
+final class ModelData: ObservableObject {
+   @Published  var landmarks: [Landmark] = load("landmarkData.json")
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
